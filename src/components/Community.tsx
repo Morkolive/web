@@ -83,7 +83,7 @@ const Community = () => {
               <p className="text-gray-400 text-center mt-2">Follow for updates and announcements</p>
             </a>
 
-            <a href="https://t.me/memexairdropchannel" className="flex flex-col items-center p-6 bg-gray-700/50 rounded-xl hover:bg-blue-500/20 hover:border-blue-500/50 transition-all transform hover:-translate-y-1">
+            <a href="https://t.me/MemeXGloball" className="flex flex-col items-center p-6 bg-gray-700/50 rounded-xl hover:bg-blue-500/20 hover:border-blue-500/50 transition-all transform hover:-translate-y-1">
               <MessageCircle className="w-12 h-12 text-blue-500 mb-4" />
               <h3 className="text-lg font-bold">Telegram</h3>
               <p className="text-gray-400 text-center mt-2">Join our active community chat</p>
