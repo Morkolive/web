@@ -37,24 +37,32 @@ const Tokenomics = () => {
   }, [isMobile]);
 
   const data = [
-    { name: 'Airdrop', value: 20, color: '#2563EB' }, // Blue
-    { name: 'Marketing', value: 16.7, color: '#10B981' }, // Green
-    { name: 'Development', value: 20, color: '#EAB308' }, // Yellow
-    { name: 'Burn', value: 43.3, color: '#DC2626' }, // Red
+    { name: 'Airdrop', value: 11.67, color: '#2563EB' },
+    { name: 'Marketing', value: 15, color: '#10B981' },
+    { name: 'Development', value: 10, color: '#EAB308' },
+    { name: 'Burn', value: 63.33, color: '#DC2626' },
   ];
 
   const RADIAN = Math.PI / 180;
   const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
-    const radius = innerRadius + (outerRadius - innerRadius) * 0.6; // Adjusted label position
+    const radius = innerRadius + (outerRadius - innerRadius) * 0.6;
     const x = cx + radius * Math.cos(-midAngle * RADIAN);
     const y = cy + radius * Math.sin(-midAngle * RADIAN);
 
     return (
-      <text x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central" fontSize={14} fontWeight="bold"> {/* Adjusted font size and weight */}
+      <text x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central" fontSize={14} fontWeight="bold">
         {`${data[index].name} ${(percent * 100).toFixed(0)}%`}
       </text>
     );
   };
+
+  const developmentUnlockData = Array.from({ length: 12 }, (_, i) => ({
+    month: i + 1,
+    percentage: 8.33,
+    cumulative: parseFloat((8.33 * (i + 1)).toFixed(2)),
+  }));
+
+  developmentUnlockData[11].cumulative = 100;
 
   return (
     <section id="tokenomics" className="relative z-10 py-20">
@@ -63,7 +71,7 @@ const Tokenomics = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Side: Total Supply */}
           <div className="flex flex-col justify-center items-center">
-            <div className="relative w-full"> {/* Make Total Supply take full width */}
+            <div className="relative w-full">
               <div className="absolute inset-0 bg-blue-500 rounded-full filter blur-xl opacity-20"></div>
               <div className="relative z-10 bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 text-center">
                 <h3 className="text-xl font-bold mb-4 text-blue-500 md:text-base">Total Supply</h3>
@@ -83,8 +91,8 @@ const Tokenomics = () => {
                   cy="50%"
                   labelLine={false}
                   label={renderCustomizedLabel}
-                  outerRadius={160}  // Increased outer radius
-                  innerRadius={50} // Added inner radius for donut effect
+                  outerRadius={160}
+                  innerRadius={50}
                   fill="#8884d8"
                   dataKey="value"
                 >
@@ -92,9 +100,34 @@ const Tokenomics = () => {
                     <Cell key={`cell-${index}`} fill={entry.color} />
                   ))}
                 </Pie>
-                <Legend align="center" verticalAlign="bottom" wrapperStyle={{ fontSize: '16px' }} /> {/* Increased font size */}
+                <Legend align="center" verticalAlign="bottom" wrapperStyle={{ fontSize: '16px' }} />
               </PieChart>
             </ResponsiveContainer>
+          </div>
+        </div>
+
+        {/* Development Unlock Table */}
+        <div className="mt-12">
+          <h3 className="text-2xl font-bold mb-4 text-center">Development Share Monthly Unlock</h3>
+          <div className="overflow-x-auto">
+            <table className="min-w-full bg-transparent border border-gray-700 rounded-2xl">
+              <thead className="text-white">
+                <tr>
+                  <th className="px-4 py-2 border-b border-gray-700">Month</th>
+                  <th className="px-4 py-2 border-b border-gray-700">Monthly Unlock (%)</th>
+                  <th className="px-4 py-2 border-b border-gray-700">Cumulative Unlock (%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {developmentUnlockData.map((item) => (
+                  <tr key={item.month} className="text-center">
+                    <td className="px-4 py-2 border-b border-gray-700">{item.month}</td>
+                    <td className="px-4 py-2 border-b border-gray-700">{item.percentage}</td>
+                    <td className="px-4 py-2 border-b border-gray-700">{item.cumulative}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
