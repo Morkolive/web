@@ -95,8 +95,8 @@ import { useState, useEffect } from 'react';
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">Super Fun! 🚀</span>
               </h1>
               <p className="text-xl text-gray-400 max-w-2xl mb-4">
-                The next generation meme token with real-world utility. Ultra-fast transfers,
-                near-zero fees, and a community-driven ecosystem with AI and NFTs.
+                A next-generation meme token with real-world utility:
+                Experience ultra-fast transfers, near-zero fees, and a community-driven token powered by AI and NFTs.
               </p>
               <p className="text-xl text-blue-400 max-w-3xl mx-auto mb-10 font-bold">
                 MemeX: A 100% Decentralized Community Project on the Electraprotocol Network!
