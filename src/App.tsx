@@ -165,9 +165,6 @@ import { useState, useEffect } from 'react';
             <ExchangePartners />
 
             {/* Community Section */}
-            <Community />
-
-            {/* About Section */}
             <About />
 
             {/* CTA Section */}
@@ -228,7 +225,7 @@ import { useState, useEffect } from 'react';
             </nav>
 
             {/* Contact Information */}
-            <div className="relative z-10 container mx-auto px-4 mt-8 text-center flex items-center justify-center h-12">
+            <div className="relative z-10  mt-8 text-center flex items-center justify-center h-12">
               <p className="text-[1.45rem] text-gray-400 leading-tight"> {/* Increased font size to 1.45rem and added leading-tight */}
                 Need assistance? 🚀 DM us on <a href="https://x.com/memexairdrop" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-500">X (Twitter)</a> for direct support! 🔒
               </p>
@@ -236,7 +233,7 @@ import { useState, useEffect } from 'react';
 
             {/* Footer */}
             <footer className="relative z-10 bg-gray-900/80 py-12">
-              <div className="container mx-auto px-4 text-center">
+              <div className="text-center">
                 <p className="text-lg text-gray-400">Legal Disclaimer</p>
                 <p className="text-sm text-gray-400 mt-2">
                   None of the information on this website should be construed as providing legal or financial advice. Please note there are always risks associated with smart contracts. MemeX is not a registered broker, analyst or investment advisor. If you have purchased $MemeX, you agree that you are not purchasing a security or investment. The MemeX team can not be held liable for any losses or taxes you may incur. You also agree that the team is representing the token is community members, and cannot modify the contract due to it being renounced. Do conduct your own due diligence and consult your financial advisor before making any investment decision.
