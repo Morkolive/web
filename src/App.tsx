@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-    import { Twitter, MessageCircle, Download, ArrowRight, ArrowUp, Menu, Home, BarChart2, Users, Info, Zap } from 'lucide-react';
+    import { Twitter, MessageCircle, Download, ArrowRight, ArrowUp, Menu, Home, BarChart2, Users, Info, Zap, FileText, Flame } from 'lucide-react';
     import Features from './components/Features';
     import Tokenomics from './components/Tokenomics';
     import Community from './components/Community';
@@ -128,7 +128,15 @@ import { useState, useEffect } from 'react';
                   rel="noopener noreferrer"
                   className="bg-transparent border-2 border-blue-500 text-blue-500 hover:bg-blue-500/10 font-bold px-8 py-4 rounded-full transition-all flex items-center justify-center"
                 >
-                  Contract
+                  Contract <FileText className="ml-2 w-5 h-5" />
+                </a>
+                <a
+                  href="https://electraprotocol.network/omni/address/xBURNomniXEPXXXXXXXXXXXXXXXXbWWsD9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-transparent border-2 border-blue-500 text-blue-500 hover:bg-blue-500/10 font-bold px-8 py-4 rounded-full transition-all flex items-center justify-center"
+                >
+                  BURN <Flame className="ml-2 w-5 h-5" />
                 </a>
               </div>
 
