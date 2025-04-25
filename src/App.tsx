@@ -81,6 +81,7 @@ function App() {
               <li><a href="#tokenomics" className="hover:text-blue-400 transition-colors">Tokenomics</a></li>
               <li><a href="#community" className="hover:text-blue-400 transition-colors">Community</a></li>
               <li><a href="#about" className="hover:text-blue-400 transition-colors">About</a></li>
+              <li><a href="https://nft.memextoken.org/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">NFT</a></li>
             </ul>
           </nav>
         </header>
@@ -178,6 +179,24 @@ function App() {
         {/* About Section */}
         <About />
 
+        {/* NFT Integration Section */}
+        <section className="relative z-10 py-20 bg-gradient-to-b from-transparent to-blue-900/20">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-4xl font-bold mb-6">NFT Integration</h2>
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-10">
+              Unique NFTs that add value to your MemeX holdings.
+            </p>
+            <a
+              href="https://nft.memextoken.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-blue-500 hover:bg-blue-600 text-black font-bold px-10 py-4 rounded-full text-lg transition-all transform hover:scale-105 shadow-lg shadow-blue-500/30"
+            >
+              Explore NFTs
+            </a>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="relative z-10 py-20 bg-gradient-to-b from-transparent to-blue-900/20">
           <div className="container mx-auto px-4 text-center">
@@ -231,6 +250,10 @@ function App() {
             <a href="#about" className="flex flex-col items-center text-gray-400 hover:text-blue-400 transition-colors">
               <Info className="w-5 h-5 mb-1" />
               <span className="text-xs">About</span>
+            </a>
+            <a href="https://nft.memextoken.org/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center text-gray-400 hover:text-blue-400 transition-colors">
+              <Info className="w-5 h-5 mb-1" />
+              <span className="text-xs">NFT</span>
             </a>
           </div>
         </nav>

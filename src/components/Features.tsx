@@ -34,13 +34,15 @@ const Features = () => {
             <h3 className="text-xl font-bold mb-4">Real-World Usability</h3>
             <p className="text-gray-400">Spend it in stores & online. Growing merchant adoption network.</p>
           </div>
-          <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl hover:transform hover:-translate-y-2 transition-transform border border-gray-700 hover:border-blue-500/50 h-full">
-            <div className="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6">
-              <Image className="text-blue-500 w-7 h-7" />
+          <a href="https://nft.memextoken.org/" target="_blank" rel="noopener noreferrer">
+            <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl hover:transform hover:-translate-y-2 transition-transform border border-gray-700 hover:border-blue-500/50 h-full">
+              <div className="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6">
+                <Image className="text-blue-500 w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">NFT Integration</h3>
+              <p className="text-gray-400">Unique NFTs that add value to your MemeX holdings.</p>
             </div>
-            <h3 className="text-xl font-bold mb-4">NFT Integration</h3>
-            <p className="text-gray-400">Unique NFTs that add value to your MemeX holdings.</p>
-          </div>
+          </a>
           <a href="https://t.me/memex_gemini_bot" target="_blank" rel="noopener noreferrer">
             <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl hover:transform hover:-translate-y-2 transition-transform border border-gray-700 hover:border-blue-500/50 h-full">
               <div className="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6">
