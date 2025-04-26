@@ -3,7 +3,6 @@ import { Twitter, MessageCircle, Download, ArrowRight, ArrowUp, Menu, Home, BarC
 import Features from './components/Features';
 import Tokenomics from './components/Tokenomics';
 import Community from './components/Community';
-import About from './components/About';
 import Roadmap from './components/Roadmap';
 import ExchangePartners from './components/ExchangePartners';
 
@@ -80,10 +79,10 @@ function App() {
               <li><a href="#features" className="hover:text-blue-400 transition-colors">Features</a></li>
               <li><a href="#tokenomics" className="hover:text-blue-400 transition-colors">Tokenomics</a></li>
               <li><a href="#community" className="hover:text-blue-400 transition-colors">Community</a></li>
-              <li><a href="#about" className="hover:text-blue-400 transition-colors">About</a></li>
               <li><a href="https://nft.memextoken.org/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">NFT</a></li>
             </ul>
           </nav>
+
         </header>
 
         {/* Hero Section */}
@@ -176,9 +175,6 @@ function App() {
         {/* Community Section */}
         <Community />
 
-        {/* About Section */}
-        <About />
-
         {/* NFT Integration Section */}
         <section className="relative z-10 py-20 bg-gradient-to-b from-transparent to-blue-900/20">
           <div className="container mx-auto px-4 text-center">
@@ -246,10 +242,6 @@ function App() {
             <a href="#community" className="flex flex-col items-center text-gray-400 hover:text-blue-400 transition-colors">
               <Users className="w-5 h-5 mb-1" />
               <span className="text-xs">Community</span>
-            </a>
-            <a href="#about" className="flex flex-col items-center text-gray-400 hover:text-blue-400 transition-colors">
-              <Info className="w-5 h-5 mb-1" />
-              <span className="text-xs">About</span>
             </a>
             <a href="https://nft.memextoken.org/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center text-gray-400 hover:text-blue-400 transition-colors">
               <Info className="w-5 h-5 mb-1" />
